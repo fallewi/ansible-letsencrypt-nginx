@@ -1,0 +1,6 @@
+domain: test.graspingtech.com
+certs_path: certs
+crt_common_name: "{{ domain }}"
+crt_subject_alt_name: 
+  - "www.{{ domain }}"
+site_path: site

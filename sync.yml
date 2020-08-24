@@ -1,0 +1,12 @@
+- hosts: web
+  vars_files: vars.yml
+  tasks:
+  - name: "sync website"
+    synchronize:
+      src: "{{ site_path }}/"
+      dest: /var/www/{{ domain }}
+      archive: no
+      checksum: yes
+      recursive: yes
+      delete: yes
+    become: no
