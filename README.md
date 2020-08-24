@@ -27,3 +27,6 @@ export CF_ZONE=<yourdomain>
 ```
 ./deploy
 ```
+
+## License
+[MIT License](LICENSE)
